@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery App</title>
+    <link rel="stylesheet" href="">
+    <style>
+        body{
+            text-align: center;
+            background: rgb(43, 42, 42);
+        }
+        h1{
+            color: blueviolet;
+        }
+        .grid-container{
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(4, 25rem);
+        }
+        .grid-container>div>img{
+            width: 100%;
+            height: 100%;
+
+        }
+        .grid-container>div> img:hover{
+           filter: brightness(50%);
+           transition: 2s all;
+           transform: scale(1.2);
+        }
+        .grid-container>div{
+            position: relative;
+            overflow: hidden;
+        }
+        .image-title{
+            position: absolute;
+            bottom: 1rem;
+            z-index: 2;
+            color: white;
+            left: 42%;
+            font-size: 1.5rem;
+            display: block;
+            
+        }
+        footer{
+            color: white;
+            margin-top: 1rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Photo Gallery App</h1>
+    <div class="grid-container">
+       <div><img src="https://images.unsplash.com/photo-1707850975372-f0e6c12274e4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw1ODMyMDR8fGVufDB8fHx8fA%3D%3D" alt="sunset">
+       <div class="image-title">Sunset</div>
+    </div>
+       <div>
+        <img src="https://images.unsplash.com/photo-1587245910433-1b9150f9ae03?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwzMzMwNDQ4fHxlbnwwfHx8fHw%3D" alt="flower">
+        <div class="image-title">Flower</div>
+    </div>
+       <div>
+        <img src="https://images.unsplash.com/photo-1462480803487-a2edfd796460?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="mountain">
+        <div class="image-title">Mountain</div>
+    </div>
+       <div>
+        <img src="https://images.unsplash.com/photo-1695378201929-c7e68a8102bd?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw3ODY5MjN8fGVufDB8fHx8fA%3D%3D" alt="moon">
+        <div class="image-title">Moon</div>
+    </div>
+       <div><img src="https://images.unsplash.com/photo-1682687220363-35e4621ed990?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxMTUzMTI1Nnx8ZW58MHx8fHx8" alt="Forest">
+        <div class="image-title">Forest</div>
+    </div>
+       <div><img src="https://images.unsplash.com/photo-1619458539056-19cf26358024?dpr=1&h=294&w=294&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8MTIxODc1M3x8ZW58MHx8fHx8" alt="tree">
+        <div class="image-title">Tree</div>
+    </div>
+       <div>
+        <img src="https://images.unsplash.com/photo-1601297183305-6df142704ea2?dpr=1&h=294&w=294&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8OTUwODcyfHxlbnwwfHx8fHw%3D" alt="sky">
+        <div class="image-title">Sky</div>
+    </div>
+       <div><img src="https://images.unsplash.com/photo-1534351229676-c171f8ef4c50?dpr=1&h=294&w=294&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8MTAwNDkzMTh8fGVufDB8fHx8fA%3D%3D" alt="cave">
+        <div class="image-title">Cave</div>
+    </div>
+       <div><img src="https://images.unsplash.com/photo-1491466424936-e304919aada7?dpr=1&h=294&w=294&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8NjI5NDIzMjN8fGVufDB8fHx8fA%3D%3D" alt="arora">
+    
+        <div class="image-title">Arora</div>
+    </div>
+       <div>
+        <img src="https://images.unsplash.com/photo-1495640452828-3df6795cf69b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxNTYwODE1fHxlbnwwfHx8fHw%3D" alt="nature">
+        <div class="image-title">Nature</div>
+    </div>
+       <div>
+        <img src="https://images.unsplash.com/photo-1518937875892-50ae13904350?dpr=1&h=294&w=294&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8cFZtbDlkbTMtTDh8fGVufDB8fHx8fA%3D%3D" alt="sea">
+        <div class="image-title">Sea</div>
+    </div>
+       <div>
+        <img src="https://images.unsplash.com/photo-1551258235-ad5cda01926d?dpr=1&h=294&w=294&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8NDEyMTQ1fHxlbnwwfHx8fHw%3D" alt="snow">
+        <div class="image-title">Snow</div>
+    </div>
+</div>
+    <div>
+        <footer>Made with love </footer>
+    </div>
+    
+    
+</body>
+</html>
